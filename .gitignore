@@ -1,3 +1,22 @@
+# Mavern 
+
+appliedprog/target/
+appliedprog/pom.xml.tag
+appliedprog/pom.xml.releaseBackup
+appliedprog/pom.xml.versionsBackup
+appliedprog/pom.xml.next
+appliedprog/release.properties
+appliedprog/dependency-reduced-pom.xml
+appliedprog/buildNumber.properties
+appliedprog/.mvn/timing.properties
+# https://maven.apache.org/wrapper/#usage-without-binary-jar
+appliedprog/.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse Core
+appliedprog/.project
+# JDT-specific (Eclipse Java Development Tools)
+appliedprog/.classpath
+
 # Compiled class file
 *.class
 

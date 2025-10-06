@@ -10,11 +10,11 @@ public class App3 {
     }
 
     public void welcome(String name) { // A method
-        System.out.println("Hello "+name+"!");
+        System.out.println(message+name);
     }
 
     public static void main(String[] args) {
-        App3 myapp = new App3("Hello world!"); // build the app
+        App3 myapp = new App3("Hello "); // build the app
         myapp.welcome("Rich"); // call the method
     }
 }

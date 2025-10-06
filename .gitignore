@@ -43,3 +43,5 @@ hs_err_pid*
 replay_pid*
 appliedprog/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 appliedprog/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+appliedprog/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+appliedprog/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst

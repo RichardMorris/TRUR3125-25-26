@@ -9,8 +9,10 @@ import java.io.InputStreamReader;
  */
 public class App2 {
     public static void main(String[] args) {
-        BufferedReader br = new BufferedReader(
-            new InputStreamReader(System.in));
+        BufferedReader br = 
+            new BufferedReader(
+               new InputStreamReader(
+                System.in));
         try {
             System.out.println("Enter your name");
             String name = br.readLine();

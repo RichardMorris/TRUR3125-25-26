@@ -1,5 +1,5 @@
 package org.singsurf.asciiart;
 
-interface Drawable {
+public interface Drawable {
     void draw(); // method declaration with no body
 }

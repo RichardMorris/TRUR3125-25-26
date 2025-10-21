@@ -20,7 +20,7 @@ public class BetterMain {
      * @param size size of the square
      * @return A Drawable representing a square
      */
-    public Drawable makeSquare(int size) {
+    public Square makeSquare(int size) {
         return new BetterSquare(size);
     }
 

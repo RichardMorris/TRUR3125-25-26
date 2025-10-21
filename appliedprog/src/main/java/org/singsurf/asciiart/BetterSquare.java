@@ -3,11 +3,10 @@ package org.singsurf.asciiart;
 /**
  * A Better version of a square, uses # rather than *
  */
-public class BetterSquare implements Drawable {
-    int size;
+public class BetterSquare extends Square {
 
-    public BetterSquare(int siz) {
-        this.size = siz; 
+    public BetterSquare(int n) {
+        super(n);
     }
 
     @Override

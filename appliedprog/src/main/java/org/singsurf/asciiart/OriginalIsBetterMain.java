@@ -14,7 +14,8 @@ public class OriginalIsBetterMain extends BetterMain {
      * @param size size of the square
      * @return A Drawable representing a square
      */
-    public Drawable makeSquare(int size) {
+    @Override
+    public Square makeSquare(int size) {
         return new Square(size);
     }
 

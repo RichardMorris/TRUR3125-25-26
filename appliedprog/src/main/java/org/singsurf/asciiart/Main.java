@@ -10,6 +10,7 @@ public class Main {
         shapes = new ArrayList<>();
         shapes.add(new Square(3));
         shapes.add(new Square(5));
+        shapes.add(new Square(7));
     }
 
     /**

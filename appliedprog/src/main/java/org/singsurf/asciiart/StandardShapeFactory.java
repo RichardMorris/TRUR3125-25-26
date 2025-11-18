@@ -11,4 +11,9 @@ public class StandardShapeFactory implements ShapeFactory {
         return new Square(size);
     }
 
+    @Override
+    public Container makeContainer() {
+        return new Container();
+    }
+
 }

@@ -11,4 +11,9 @@ public class BetterShapeFactory implements ShapeFactory {
         return new BetterSquare(size);
     }
 
+
+    @Override
+    public Container makeContainer() {
+        return new Container();
+    }
 }

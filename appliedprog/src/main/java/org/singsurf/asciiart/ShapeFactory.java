@@ -9,4 +9,6 @@ public interface ShapeFactory {
      */
     public Square makeSquare(int size);
 
+    public Container makeContainer();
+
 }

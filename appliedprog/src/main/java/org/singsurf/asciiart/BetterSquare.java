@@ -18,4 +18,13 @@ public class BetterSquare extends Square {
             System.out.println();
         }
     }
+
+    @Override
+    public void draw(Renderer r) {
+        for(int row=0; row<size; ++row) {
+            for(int col=0; col<size; ++col) {
+                r.plot(col, row, '#');
+            }
+        }
+    }
 }

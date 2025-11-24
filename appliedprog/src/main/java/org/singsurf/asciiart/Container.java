@@ -22,4 +22,11 @@ public class Container implements Drawable {
     public void add(Drawable child) {
         children.add(child);
     }
+
+    @Override
+    public void draw(Renderer r) {
+        for(var child: children) {
+            child.draw(r);
+        }
+    }
 }

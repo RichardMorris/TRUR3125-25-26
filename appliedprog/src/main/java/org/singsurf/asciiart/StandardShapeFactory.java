@@ -12,6 +12,10 @@ public class StandardShapeFactory implements ShapeFactory {
     }
 
     @Override
+    public PositionedSquare makeSquare(int size,int x,int y) {
+        return new PositionedSquare(size,x,y);
+    }
+    @Override
     public Container makeContainer() {
         return new Container();
     }

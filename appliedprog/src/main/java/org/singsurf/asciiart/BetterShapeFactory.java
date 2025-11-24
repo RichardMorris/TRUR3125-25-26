@@ -16,4 +16,9 @@ public class BetterShapeFactory implements ShapeFactory {
     public Container makeContainer() {
         return new Container();
     }
+
+    @Override
+    public Square makeSquare(int size, int x, int y) {
+        return new PositionedSquare(size,x,y);
+    }
 }

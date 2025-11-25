@@ -3,7 +3,7 @@ package org.singsurf.asciiart;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RenderedMain {
+public class RendererMain {
     List<Drawable> shapes; // An expandable list of objects
     ShapeFactory shapeFac;
     Renderer renderer;
@@ -11,7 +11,7 @@ public class RenderedMain {
      * Constructor, uses the standard shape factory
      * and a simple renderer.
      */
-    public RenderedMain() { 
+    public RendererMain() { 
         shapeFac = new StandardShapeFactory();
         shapes = new ArrayList<>();
         renderer = new SimpleRenderer(20, 10);
@@ -73,7 +73,7 @@ public class RenderedMain {
 
     public static void main(String[] args) {
         System.out.println("Using the simple rendered");
-        RenderedMain myapp = new RenderedMain(); // build the app
+        RendererMain myapp = new RendererMain(); // build the app
         myapp.createScene();
         myapp.display(); 
     }

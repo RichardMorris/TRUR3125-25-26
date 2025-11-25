@@ -3,7 +3,6 @@ package org.singsurf.asciiart;
 /**
  * A rendered for ASCII art shapes.
  */
-
 public interface Renderer {
     /**
      * Plot a character at the given position
@@ -23,5 +22,4 @@ public interface Renderer {
      * Render the current contents to output
      */
     public void render();
-
 }

@@ -4,7 +4,7 @@ package org.singsurf.asciiart;
  * A simple implementation of the Renderer interface
  * that uses a 2D character array as a canvas.
  */
-public class SimpleRenderer implements Renderer {
+public class SimpleRenderer extends AbstractRenderer {
     final char[][] canvas;
     final int width;
     final int height;
@@ -40,4 +40,5 @@ public class SimpleRenderer implements Renderer {
             System.out.println();
         }
     }
+
 }

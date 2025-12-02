@@ -7,10 +7,23 @@ package org.singsurf.asciiart;
  */
 public abstract class AbstractRenderer implements Renderer {
 
-    public abstract void clear();
+    /**
+     * Clears the rendering surface.
+     * Protected means only subclasses can call this method.
+     * It is abstract so subclasses must implement it.
+     */
+    protected abstract void clear();
 
-    public abstract void render();
+    /**
+     * Displays the rendering surface.
+     * Protected means only subclasses can call this method.
+     * It is abstract so subclasses must implement it.
+     */
+    protected abstract void render();
 
+    /**
+     * Outline of the main steps of the display algorithm.
+     */
     @Override
     public void display(Drawable scene) {
         clear();

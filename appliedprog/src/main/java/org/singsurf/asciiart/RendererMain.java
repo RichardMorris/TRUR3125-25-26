@@ -19,32 +19,12 @@ public class RendererMain {
      * This is better as a separate method than in the constructor.
      */
     public void createScene() {
-        var container = makeContainer();
-        container.add(makeSquare(3,1,2));
-        container.add(makeSquare(5,3,4));
+        var container = shapeFac.makeContainer();
+        container.add(shapeFac.makeSquare(3,1,2));
+        container.add(shapeFac.makeSquare(5,3,4));
         
         scene = container;
     }
-
-    /**
-     * A delegate method.
-     * It calls the makeSquare of the specified factory. 
-     * 
-     * @param size size of the square
-     * @return A Drawable representing a square
-     */
-    public Square makeSquare(int size) {
-        return shapeFac.makeSquare(size);
-    }
-
-    public Square makeSquare(int size, int x, int y) {
-        return shapeFac.makeSquare(size,x,y);
-    }
-
-   public Container makeContainer() {
-        return shapeFac.makeContainer();
-    }
-
 
     /**
       * Display all objects

@@ -14,12 +14,7 @@ public interface Renderer {
     public void plot(int x,int y, char c);
 
     /**
-     * Clear the rendering area
+     * Display a scene
      */
-    public void clear();
-
-    /**
-     * Render the current contents to output
-     */
-    public void render();
+    public void display(Drawable scene);
 }

@@ -1,6 +1,6 @@
 # Mavern 
 
-appliedprog/target/
+appliedprog/target/**
 appliedprog/pom.xml.tag
 appliedprog/pom.xml.releaseBackup
 appliedprog/pom.xml.versionsBackup

@@ -1,6 +1,6 @@
 package org.singsurf.asciiart;
 
-public interface PixelRenderer extends Renderer {
+public interface GlyphRenderer extends Renderer {
 
     /**
      * Plot a character at the given position
@@ -9,6 +9,6 @@ public interface PixelRenderer extends Renderer {
      * @param y y coordinate
      * @param c character to plot
      */
-    public void plot(int x,int y, Pixel c);
+    public void plot(int x,int y, Glyph c);
 
 }

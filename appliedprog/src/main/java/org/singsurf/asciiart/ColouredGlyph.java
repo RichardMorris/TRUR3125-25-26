@@ -3,13 +3,13 @@ package org.singsurf.asciiart;
 import java.awt.Color;
 
 /**
- * A coloured pixel with a character representation.
+ * A coloured glyph with a character representation.
  */
-public class ColouredPixel implements Pixel {
+public class ColouredGlyph implements Glyph {
 	Character ch;
 	Color c;
 	
-	public ColouredPixel(Character ch, Color c) {
+	public ColouredGlyph(Character ch, Color c) {
 		super();
 		this.ch = ch;
 		this.c = c;

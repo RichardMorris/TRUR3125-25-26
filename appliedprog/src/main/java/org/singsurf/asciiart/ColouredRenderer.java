@@ -4,9 +4,9 @@ import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ColouredRenderer extends AbstractRenderer implements PixelRenderer {
+public class ColouredRenderer extends AbstractRenderer implements GlyphRenderer {
 
-    final Pixel[][] canvas;
+    final Glyph[][] canvas;
     final int width;
     final int height;
     
@@ -36,11 +36,11 @@ public class ColouredRenderer extends AbstractRenderer implements PixelRenderer 
     public ColouredRenderer(int w, int h) {
         this.width = w;
         this.height = h;
-        canvas = new ColouredPixel[height][width];
+        canvas = new ColouredGlyph[height][width];
     }
 
 	@Override
-	public void plot(int x, int y, Pixel c) {
+	public void plot(int x, int y, Glyph c) {
         if(x >= 0 && x < width && y >= 0 && y < height) {
             canvas[y][x] = c;
         }
@@ -49,7 +49,7 @@ public class ColouredRenderer extends AbstractRenderer implements PixelRenderer 
 	@Override
 	public void plot(int x, int y, char c) {
         if(x >= 0 && x < width && y >= 0 && y < height) {
-            canvas[y][x] = new ColouredPixel(c,Color.BLACK);
+            canvas[y][x] = new ColouredGlyph(c,Color.BLACK);
         }		
 	}
 
@@ -66,8 +66,8 @@ public class ColouredRenderer extends AbstractRenderer implements PixelRenderer 
 	protected void render() {
         for(int row=0; row<height; ++row) {
             for(int col=0; col<width; ++col) {
-            	Pixel pix = canvas[row][col];
-            	if(pix instanceof ColouredPixel cp) {
+            	Glyph pix = canvas[row][col];
+            	if(pix instanceof ColouredGlyph cp) {
             		Color c = cp.getColour();
 					String ansi = lookup.get(c);
 					

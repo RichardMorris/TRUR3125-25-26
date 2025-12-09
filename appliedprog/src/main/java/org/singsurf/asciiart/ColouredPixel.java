@@ -2,6 +2,9 @@ package org.singsurf.asciiart;
 
 import java.awt.Color;
 
+/**
+ * A coloured pixel with a character representation.
+ */
 public class ColouredPixel implements Pixel {
 	Character ch;
 	Color c;

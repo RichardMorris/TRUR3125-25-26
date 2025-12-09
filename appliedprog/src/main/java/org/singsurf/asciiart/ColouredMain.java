@@ -5,8 +5,8 @@ public class ColouredMain {
     ColouredShapeFactory shapeFac;
     Renderer renderer;
     /**
-     * Constructor, uses the standard shape factory
-     * and a simple renderer.
+     * Constructor, uses the coloured shape factory
+     * and a coloured renderer.
      */
     public ColouredMain() { 
         shapeFac = new ColouredShapeFactory();
@@ -20,8 +20,8 @@ public class ColouredMain {
      */
     public void createScene() {
         var container = shapeFac.makeContainer();
-        container.add(shapeFac.makeSquare(3,1,2, java.awt.Color.RED));
-        container.add(shapeFac.makeSquare(5,3,4, java.awt.Color.BLUE));
+        container.add(shapeFac.makeSquare(3,1,2, '*', java.awt.Color.RED));
+        container.add(shapeFac.makeSquare(5,3,4, '@', java.awt.Color.BLUE));
         
         scene = container;
     }

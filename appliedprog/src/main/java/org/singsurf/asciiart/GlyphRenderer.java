@@ -7,7 +7,7 @@ public interface GlyphRenderer extends Renderer {
      * 
      * @param x x coordinate
      * @param y y coordinate
-     * @param c character to plot
+     * @param c character or glyph to plot
      */
     public void plot(int x,int y, Glyph c);
 

@@ -20,23 +20,11 @@ public class ColouredSquare extends PositionedSquare {
 
 	@Override
 	public void draw(Renderer r) {
-		// Here we use type casting to check if the renderer supports coloured pixels
-		if(r instanceof GlyphRenderer) {
-			GlyphRenderer gr = (GlyphRenderer) r;
-	        for(int row=0; row<size; ++row) {
-	            for(int col=0; col<size; ++col) {
-	                gr.plot(x+col, y+row, pix);
-	            }
-	        }
-		}
-		else {
-			// Otherwise fall back to older plot method of the standard Renderer
-	        for(int row=0; row<size; ++row) {
-	            for(int col=0; col<size; ++col) {
-	                r.plot(x+col, y+row, pix.getCharacter());
-	            }
-	        }
-		}
+        for(int row=0; row<size; ++row) {
+            for(int col=0; col<size; ++col) {
+                r.plot(x+col, y+row, pix);
+            }
+        }
 	}
 
 	

@@ -22,7 +22,8 @@ public class ColouredMain {
         var container = shapeFac.makeContainer();
         container.add(shapeFac.makeSquare(3,1,2, '*', java.awt.Color.RED));
         container.add(shapeFac.makeSquare(5,3,4, '@', java.awt.Color.BLUE));
-        
+//        container.add(shapeFac.makeSquare(2,1,7, '.', java.awt.Color.GREEN));
+        container.add(new PositionedSquare(2,1,7));
         scene = container;
     }
 
